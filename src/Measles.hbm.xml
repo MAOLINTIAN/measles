@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="vo.Measles" table="measles">
+		<id name="id" column="id" type="int">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="areaid" column="areaid" type="int"></property>
+		<property name="areaname" column="areaname" type="string"></property>
+		<property name="year" column="year" type="string"></property>
+		<property name="seak_sum" column="seak_sum" type="int"></property>
+		<property name="dead_sum" column="dead_sum" type="int"></property>
+		<property name="seak_chance" column="seak_chance" type="string"></property>
+		<property name="dead_chance" column="dead_chance" type="string"></property>
+	</class>
+</hibernate-mapping>

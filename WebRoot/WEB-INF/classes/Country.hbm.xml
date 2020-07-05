@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="vo.Country" table="country">
+		<id name="id" column="id" type="int">
+			<generator class="increment"></generator>
+		</id>
+		<property name="year" column="year" type="string"></property>
+		<property name="GDP" column="GDP" type="float"></property>
+		<property name="MHI" column="MHI" type="float"></property>
+		<property name="DCP" column="DCP" type="float"></property>
+
+	</class>
+</hibernate-mapping>

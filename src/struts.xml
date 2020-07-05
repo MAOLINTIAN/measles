@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+<struts>
+	 <package name="Measles" extends="json-default">
+	 <action name="ActionYearDeadchance" class="action.ActionYear" method="getYearDeadchance"></action>
+	 <action name="ActionYearDeadchanceTop" class="action.ActionYear" method="getYearDeadchanceTop"></action>
+	 <action name="ActionYearDeadchanceMin" class="action.ActionYear" method="getYearDeadchanceMin"></action>
+	 <action name="ActionYearSeakchance" class="action.ActionYear" method="getYearSeakchance"></action>
+	 <action name="ActionYearSeakchanceTop" class="action.ActionYear" method="getYearSeakchanceTop"></action>
+	 <action name="ActionYearSeakchanceMin" class="action.ActionYear" method="getYearSeakchanceMin"></action>
+	 <!--具体城市分析里用到的ACTION  -->
+	  <action name="ActionCityanalyse" class="action.ActionCity" method="getDeadchance">
+	      <result name = "pieshow">/cityanal.jsp</result>
+	  </action>
+	 
+	 <action name="ActionCountryGdp" class="action.ActionCountry" method="getCountryGdp"></action>
+	 
+	 </package>
+	
+</struts>
